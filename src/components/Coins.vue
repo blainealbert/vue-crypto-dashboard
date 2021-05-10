@@ -73,7 +73,7 @@ export default {
   mounted() {
     axios
       //.get("https://jsonplaceholder.typicode.com/users")b2452684f71278bbad765a157d9379ee
-      .get("https://api.nomics.com/v1/currencies/ticker?key=b2452684f71278bbad765a157d9379ee&ids=BTC,ETH,DASH,DOGE,ADA&interval=1d,30d&convert=CAD&per-page=100&page=1")
+      .get("https://api.nomics.com/v1/currencies/ticker?key=b2452684f71278bbad765a157d9379ee&ids=BTC,ETH,DASH,DOGE,ADA,XLM,THETA&interval=1d,30d&convert=CAD&per-page=100&page=1")
       .then((response) => {
         console.log(response);
         this.coinList = response.data;
